@@ -6,6 +6,8 @@
 yarn && yarn start
 ```
 
+And once the dev server is up, open the devtools :)
+
 ## How to test
 
 ```
