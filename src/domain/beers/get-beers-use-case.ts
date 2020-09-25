@@ -8,7 +8,7 @@ export type GetBeersUseCase = UseCase<BeerListRequestObject, BeerItem[]>
 export const getGetBeersUseCase = (
   beerRepository: BeerRepository,
 ): GetBeersUseCase => ({
-  execute: (params: BeerListRequestObject = { page: 0 }): Promise<BeerItem[]> => {
+  execute: (params: BeerListRequestObject = { page: 1 }): Promise<BeerItem[]> => {
     return beerRepository.getAll(params)
   },
 })
